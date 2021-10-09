@@ -1,0 +1,90 @@
+*, *::before, *::after {margin: 0; padding: 0p; box-sizing: border-box;}
+
+/* Menu */
+.menu {
+    /* Dimensions */
+    width: 100%;
+    padding: 20px;
+
+    /* Display */
+    display: flex;
+    justify-content: space-evenly;
+
+    /* POSITION */
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1020;
+
+    /* design */
+    background: #fff;
+
+}
+
+.boton {
+    /* position */
+    position: relative;
+
+    /* dimensions */
+    padding: 20px;
+
+    /* Design */
+    background: #333;
+    color: #f80;
+    border-radius: 25px;
+
+    /* Others */
+    cursor: pointer;
+
+}
+
+.boton:hover {
+    background: #444;
+}
+
+.subMenu {
+    /* position */
+    position:absolute;
+    top: 100%;
+    left: 0;
+
+    /* display */
+    display: none;
+    
+    /* Design */
+    background: #f80;
+    color: #444;
+    opacity: 0;
+
+    /* dimensions */
+    width: 100%;
+    padding: 15px 20px;
+
+    /* transition */
+    transition: opacity ease-in-out .3s;
+}
+
+.pseudoFondo {
+    /* position */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+
+
+    /* Dimensions */
+    width: 100vh;
+    height: 100vh;
+
+    opacity: .7;
+
+    /* Display */
+    display: none;
+
+    /* Transition */
+    transition: background .3s ease-in-out;
+}
+
+.d-block {
+    display: block;
+}
